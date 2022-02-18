@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - count
+  - AllyBullet
+  - gameManager
+  - levelManager
+  - Ally
+  - EnemyBullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - PostPro
+  - Enemy
+  - Ally
+  - AllyBullet
+  - EnemyBullet
+  - Blob
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2964942761
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 526439513
+    locked: 0
