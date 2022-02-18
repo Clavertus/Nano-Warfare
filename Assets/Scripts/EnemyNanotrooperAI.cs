@@ -205,8 +205,10 @@ public class EnemyNanotrooperAI : MonoBehaviour
         {
             for (int i = 0; i < allAllies.Length; i++)
             {
+
                 if (allAllies[i].transform.parent.gameObject.name != "Enemy Crystal")
                 {
+
                     if (allAllies[i].transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1)
                     {
 
@@ -217,15 +219,31 @@ public class EnemyNanotrooperAI : MonoBehaviour
 
             if (followThis != null)
             {
-                if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
-                          Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2 &&
-                          Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                if (GetClosestEntity(allEnemies) != null)
                 {
-                    canStepUp = true;
+                    if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
+                        Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2 &&
+                        Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                    {
+                        canStepUp = true;
+                    }
+                    else
+                    {
+                        canStepUp = false;
+                    }
+
                 }
                 else
                 {
-                    canStepUp = false;
+                    if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
+                        Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                    {
+                        canStepUp = true;
+                    }
+                    else
+                    {
+                        canStepUp = false;
+                    }
                 }
             }
             else

@@ -219,22 +219,33 @@ public class NanotrooperAI : MonoBehaviour
 
             if (followThis != null)
             {
-                if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
-
-                          (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2 ||
-                          GetClosestEntity(allEnemies) == null) 
-                          
-                          &&
-
-                          Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                if (GetClosestEntity(allEnemies) != null)
                 {
-                    canStepUp = true;
-                }
-                else
+                    if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
+                        Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2 &&
+                        Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                    {
+                        canStepUp = true;
+                    }
+                    else
+                    {
+                        canStepUp = false;
+                    }
+
+                } else
                 {
-                    canStepUp = false;
+                    if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
+                        Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                    {
+                        canStepUp = true;
+                    }
+                    else
+                    {
+                        canStepUp = false;
+                    }
                 }
-            } else
+            }
+            else
             {
                 if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2)
                 {
