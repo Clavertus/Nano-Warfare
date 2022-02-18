@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,9 +29,8 @@ public class BulkyAI : MonoBehaviour
 
     public ParticleSystem ps;
 
-    public Collider2D[] enemiesInRange;
-    public Collider2D[] alliesInRange;
     public Collider2D[] allEnemies;
+    public Collider2D[] allAllies;
     public Collider2D followThis;
     //default 5
 
@@ -59,7 +58,7 @@ public class BulkyAI : MonoBehaviour
         return tMin;
     }
 
-    Collider2D GetClosestEnemy(Collider2D[] allEnemies)
+    Collider2D GetClosestEntity(Collider2D[] allEnemies)
     {
         Collider2D tMin = null;
         float minDist = Mathf.Infinity;
@@ -78,7 +77,7 @@ public class BulkyAI : MonoBehaviour
 
     void Awake()
     {
-        //Debug.Log(alliesInRange.Length);
+        //Debug.Log(allAllies.Length);
 
     }
 
@@ -159,16 +158,16 @@ public class BulkyAI : MonoBehaviour
         allEnemies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
     new Vector2(transform.position.x + 20, transform.position.y - 1), 1 << 7);
 
-        enemiesInRange = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
+        allEnemies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
             new Vector2(transform.position.x + 20, transform.position.y - 1), 1 << 7);
 
-        alliesInRange = Physics2D.OverlapAreaAll(new Vector2(transform.position.x - 1f, transform.position.y + 1),
+        allAllies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x - 1f, transform.position.y + 1),
            new Vector2(transform.position.x + 10, transform.position.y - 1), 1 << 8);
 
 
         if (allEnemies.Length > 0)
         {
-            if (Vector2.Distance(transform.position, GetClosestEnemy(allEnemies).transform.position) <= stoppingDistance * 2.5f && canAttack)
+            if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) <= stoppingDistance * 2.5f && canAttack)
             {
                 canAttack = false;
                 StartCoroutine("Attack");
@@ -177,15 +176,15 @@ public class BulkyAI : MonoBehaviour
 
 
 
-        if (alliesInRange.Length > 1)
+        if (allAllies.Length > 1)
         {
-            for (int i = 0; i < alliesInRange.Length; i++)
+            for (int i = 0; i < allAllies.Length; i++)
             {
 
-                if (alliesInRange[i].transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1)
+                if (allAllies[i].transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1)
                 {
 
-                    followThis = alliesInRange[i];
+                    followThis = allAllies[i];
                 }
             }
 
@@ -193,7 +192,7 @@ public class BulkyAI : MonoBehaviour
             if (followThis != null)
             {
                 if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
-                          Vector2.Distance(transform.position, GetClosestEnemy(allEnemies).transform.position) > stoppingDistance * 2.5f &&
+                          Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2.5f &&
                           Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance * 2)
                 {
                     canStepUp = true;
@@ -205,7 +204,7 @@ public class BulkyAI : MonoBehaviour
             }
             else
             {
-                if (Vector2.Distance(transform.position, GetClosestEnemy(allEnemies).transform.position) > stoppingDistance * 2.5f)
+                if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2.5f)
                 {
                     canStepUp = true;
                 }
@@ -215,13 +214,13 @@ public class BulkyAI : MonoBehaviour
                 }
             }
         }
-        else if (enemiesInRange.Length == 0)
+        else if (allEnemies.Length == 0)
         {
             canStepUp = true;
         }
         else
         {
-            if (Vector2.Distance(transform.position, GetClosestEnemy(allEnemies).transform.position) > stoppingDistance * 2.5f)
+            if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2.5f)
             {
                 canStepUp = true;
             }
@@ -238,21 +237,21 @@ public class BulkyAI : MonoBehaviour
 
         /* if (Input.GetKeyDown("z")) {
 
-              Debug.Log(Vector2.Distance(transform.position, GetClosestAlly(alliesInRange).transform.position));
+              Debug.Log(Vector2.Distance(transform.position, GetClosestAlly(allAllies).transform.position));
 
           }
 
           */
 
+          /*
 
-
-        if (enemiesInRange.Length > 0)
+        if (allEnemies.Length > 0)
         {
             rb.velocity = new Vector2(0, 0);
         }
 
 
-        if (enemiesInRange.Length == 0 && canStepUp)
+        if (allEnemies.Length == 0 && canStepUp)
         {
 
             walk = true;
@@ -261,7 +260,7 @@ public class BulkyAI : MonoBehaviour
         }
 
 
-        if (alliesInRange.Length > 0)
+        if (allAllies.Length > 0)
         {
 
 
@@ -306,10 +305,10 @@ public class BulkyAI : MonoBehaviour
 
             //singletarget damage
 
-            if (GetClosestEnemy(allEnemies).transform.parent.GetComponent<Target>() != null)
+            if (GetClosestEntity(allEnemies).transform.parent.GetComponent<Target>() != null)
             {
 
-                GetClosestEnemy(allEnemies).transform.parent.GetComponent<Target>().TakeDamage(slashDamage);
+                GetClosestEntity(allEnemies).transform.parent.GetComponent<Target>().TakeDamage(slashDamage);
                 GameObject particle = Instantiate(stabParticle, axeTop.position, axeTop.rotation);
                 Destroy(particle, .5f);
             }
@@ -319,13 +318,13 @@ public class BulkyAI : MonoBehaviour
            for piercing damage
 
 
-            for(int i = 0; i < enemiesInRange.Length; i++)
+            for(int i = 0; i < allEnemies.Length; i++)
            {
 
            }
 
              */
-
+/*
             yield return new WaitForSeconds(attackSpeed);
             StartCoroutine("Attack");
         }
@@ -345,3 +344,4 @@ public class BulkyAI : MonoBehaviour
 
 
 }
+*/

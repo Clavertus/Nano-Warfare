@@ -25,8 +25,8 @@ public class SniperAI : MonoBehaviour
 
     public ParticleSystem ps;
 
-    public Collider2D[] enemiesInRange;
-    public Collider2D[] alliesInRange;
+    public Collider2D[] allEnemies;
+    public Collider2D[] allAllies;
 
 
     void Start()
@@ -97,10 +97,10 @@ public class SniperAI : MonoBehaviour
 
     void Update()
     {
-        enemiesInRange = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
+        allEnemies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
             new Vector2(transform.position.x + range, transform.position.y - 1), 1 << 7);
 
-        if(enemiesInRange.Length > 0)
+        if(allEnemies.Length > 0)
         {
             if (!isShooting)
             {
