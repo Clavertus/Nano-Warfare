@@ -5,39 +5,71 @@ using UnityEngine;
 public class PlayerInfo : MonoBehaviour
 {
     public int chronocredits;
-    public int gold;
+    public int essence;
 
-    public bool hasByte;
-    public bool hasKilobyte;
-    public bool hasMegabyte;
-    public bool hasNanotrooper;
-    public bool hasSniper;
-    public bool hasCommander;
-    public bool hasStinger;
-    public bool hasBulky;
-    public bool hasDecimator;
-    public bool hasJuggernaut;
-    public bool hasAssassin;
 
+    public bool[] playerTroops;
+
+    /*
     public int[] ByteUpgrades;         //damage, range, health
     public int[] KilobyteUpgrades;     //damage, range, health
     public int[] MegabyteUpgrades;     //damage, range, health
-    public int[] NanotrooperUpgrades;  //damage, range, health, firerate
+   
     public int[] SniperUpgrades;       //damage, health, firerate  
     public int[] CommanderUpgrades;    //damage, range, health, firerate
-    public int[] StingerUpgrades;      //damage, health, attackspeed
+  
     public int[] BulkyUpgrades;        //damage, health, attackspeed
     public int[] DecimatorUpgrades;    //damage, health, attackspeed
     public int[] JuggernautUpgrades;   //damage, health, attackspeed
     public int[] AssassinUpgrades;     //damage, health, attackspeed
 
+    */
+
+     public int[] NanotrooperUpgrades;  //damage, range, health, firerate
+     public int[] StingerUpgrades;      //damage, health, attackspeed
+
     void Awake()
     {
+        playerTroops = new bool[10];
         NanotrooperUpgrades = new int[4];
-        CommanderUpgrades = new int[4];
-        SniperUpgrades = new int[3];
         StingerUpgrades = new int[3];
+
+
+        essence = PlayerPrefs.GetInt("essence", 0);
+        chronocredits = PlayerPrefs.GetInt("cc", 0);
+        AnalyzePlayerTroops(PlayerPrefs.GetString("troops", "0000000000"));
+        AnalyzePlayerUpgrades(StingerUpgrades, PlayerPrefs.GetString("upgrades_stinger", "000"));
+        AnalyzePlayerUpgrades(NanotrooperUpgrades, PlayerPrefs.GetString("upgrades_nanotrooper", "000"));
+        
+
     }
+
+
+    void AnalyzePlayerUpgrades(int[] upgrades, string s)
+    {
+        for (int i = 0; i < s.Length; i++)
+        {
+            upgrades[i] = (int)s[i];          
+        }
+
+    }
+
+
+    void AnalyzePlayerTroops(string s)
+    {
+        for(int i = 0; i < s.Length; i++)
+        {
+           
+            if(s[i] == '1')
+            {
+                playerTroops[i] = true;
+            } else
+            {
+                playerTroops[i] = false;
+            }
+        }
+    }
+
 
     void Update()
     {
@@ -62,6 +94,6 @@ public class PlayerInfo : MonoBehaviour
             StingerUpgrades[3] += 1; //fireRate
         }
         */
-    }
+}
 
 }
