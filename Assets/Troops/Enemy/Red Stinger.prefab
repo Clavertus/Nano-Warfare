@@ -560,6 +560,8 @@ MonoBehaviour:
   hp: 0
   entityTypeLayer: 
   isCamo: 0
+  levelObject: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!114 &5285610967656907399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,9 +625,8 @@ MonoBehaviour:
   attackSpeed: 1
   ps: {fileID: 0}
   psParent: {fileID: 1932149043499279346}
-  enemiesInRange: []
-  alliesInRange: []
   allEnemies: []
+  allAllies: []
   followThis: {fileID: 0}
   slashDamage: 0
   cond1: 0
@@ -698,6 +699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RedHitParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078326074050773594, guid: a5118150d4647a8478e3ddc85e9fa34a,
+        type: 3}
+      propertyPath: looping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5118150d4647a8478e3ddc85e9fa34a, type: 3}

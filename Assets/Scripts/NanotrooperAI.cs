@@ -30,9 +30,8 @@ public class NanotrooperAI : MonoBehaviour
 
     public ParticleSystem ps;
 
-    public Collider2D[] enemiesInRange;
-    public Collider2D[] alliesInRange;
     public Collider2D[] allEnemies;
+    public Collider2D[] allAllies;
     public Collider2D followThis;
     public Collider2D currentTarget;
     public float stoppingDistance;
@@ -42,12 +41,12 @@ public class NanotrooperAI : MonoBehaviour
     public bool cond3;
     //default 5
 
-    private Collider2D GetClosestEnemy(Collider2D[] allEnemies)
+    private Collider2D GetClosestEntity(Collider2D[] entities)
     {
         Collider2D tMin = null;
         float minDist = Mathf.Infinity;
         Vector2 currentPos = transform.position;
-        foreach (Collider2D t in allEnemies)
+        foreach (Collider2D t in entities)
         {
             if (t != null)
             {
@@ -192,49 +191,63 @@ public class NanotrooperAI : MonoBehaviour
     void Update()
     {
 
-        currentTarget = GetClosestEnemy(allEnemies);
+        currentTarget = GetClosestEntity(allEnemies);
 
 
         allEnemies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
-            new Vector2(transform.position.x + 100, transform.position.y - 1), 1 << 7);
-
-        enemiesInRange = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
             new Vector2(transform.position.x + range, transform.position.y - 1), 1 << 7);
 
-        alliesInRange = Physics2D.OverlapAreaAll(new Vector2(transform.position.x - .3f, transform.position.y + 1),
+
+        allAllies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x - .3f, transform.position.y + 1),
            new Vector2(transform.position.x + 10f, transform.position.y - 1), 1 << 8);
 
 
-        if (alliesInRange.Length > 1)
+        if (allAllies.Length > 1)
         {
-            for (int i = 0; i < alliesInRange.Length; i++)
+            for (int i = 0; i < allAllies.Length; i++)
             {
 
-                if(alliesInRange[i].transform.parent.gameObject.name != "Player Crystal") {
+                if(allAllies[i].transform.parent.gameObject.name != "Player Crystal") {
 
-                    if (alliesInRange[i].transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1)
+                    if (allAllies[i].transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1)
                     {
 
-                        followThis = alliesInRange[i];
+                        followThis = allAllies[i];
                     }
                 }
             }
 
             if (followThis != null)
             {
-                if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
-                          Vector2.Distance(transform.position, GetClosestEnemy(allEnemies).transform.position) > stoppingDistance * 2 &&
-                          Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                if (GetClosestEntity(allEnemies) != null)
                 {
-                    canStepUp = true;
-                }
-                else
+                    if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
+                        Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2 &&
+                        Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                    {
+                        canStepUp = true;
+                    }
+                    else
+                    {
+                        canStepUp = false;
+                    }
+
+                } else
                 {
-                    canStepUp = false;
+                    if (followThis.transform.parent.gameObject.GetComponent<Priority>().priority == gameObject.GetComponent<Priority>().priority - 1 &&
+                        Vector2.Distance(transform.position, followThis.transform.position) > stoppingDistance)
+                    {
+                        canStepUp = true;
+                    }
+                    else
+                    {
+                        canStepUp = false;
+                    }
                 }
-            } else
+            }
+            else
             {
-                if (Vector2.Distance(transform.position, GetClosestEnemy(allEnemies).transform.position) > stoppingDistance * 2)
+                if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2)
                 {
                     canStepUp = true;
                 } else
@@ -243,13 +256,13 @@ public class NanotrooperAI : MonoBehaviour
                 }
             }
         }
-        else if (enemiesInRange.Length == 0)
+        else if (allEnemies.Length == 0)
         {
             canStepUp = true;
         }
         else
         {
-            if (Vector2.Distance(transform.position, GetClosestEnemy(allEnemies).transform.position) > stoppingDistance * 2)
+            if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2)
             {
                 canStepUp = true;
             }
@@ -265,7 +278,7 @@ public class NanotrooperAI : MonoBehaviour
 
 
 
-        if (enemiesInRange.Length > 0)
+        if (allEnemies.Length > 0)
         {
             if (!isShooting)
             {
@@ -284,7 +297,7 @@ public class NanotrooperAI : MonoBehaviour
         }
 
 
-        if (enemiesInRange.Length == 0 && canStepUp)
+        if (allEnemies.Length == 0 && canStepUp)
         {
             if (isShooting)
             {
@@ -306,13 +319,13 @@ public class NanotrooperAI : MonoBehaviour
 
         }
 
-        if (canStepUp && enemiesInRange.Length == 0)
+        if (canStepUp && allEnemies.Length == 0)
         {
             walk = true;
             anim.SetBool("Walking", true);
         }
 
-        if (canStepUp && alliesInRange.Length == 0)
+        if (canStepUp && allAllies.Length == 0)
         {
             walk = true;
             anim.SetBool("Walking", true);
@@ -333,7 +346,7 @@ public class NanotrooperAI : MonoBehaviour
     }
 
 
-    //git test v2
+
 
 
 
