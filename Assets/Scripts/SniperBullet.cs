@@ -6,13 +6,13 @@ public class SniperBullet : MonoBehaviour
 {
     public float impactForce;
     public ParticleSystem BulletHit;
-
+    /*
     void Start()
     {
         GameObject GameManager = GameObject.FindGameObjectWithTag("gameManager");
         impactForce = GameManager.GetComponent<PlayerInfo>().SniperUpgrades[0] * 30 + 30;
     }
-
+    */
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.collider.tag == "Enemy")

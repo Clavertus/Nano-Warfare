@@ -10,7 +10,8 @@ public class CommanderBullet : MonoBehaviour
     void Start()
     {
         GameObject GameManager = GameObject.FindGameObjectWithTag("gameManager");
-        impactForce = GameManager.GetComponent<PlayerInfo>().CommanderUpgrades[0] * 7 + 10;
+        //  impactForce = GameManager.GetComponent<PlayerInfo>().CommanderUpgrades[0] * 7 + 10;
+        impactForce = 5;
     }
 
     void OnCollisionEnter2D(Collision2D col)

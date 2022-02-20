@@ -28,7 +28,7 @@ public class SniperAI : MonoBehaviour
     public Collider2D[] allEnemies;
     public Collider2D[] allAllies;
 
-
+    /*
     void Start()
     {
 
@@ -93,7 +93,7 @@ public class SniperAI : MonoBehaviour
         anim.SetTrigger("GoIdle");
 
     }
-
+    */
 
     void Update()
     {

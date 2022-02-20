@@ -30,16 +30,18 @@ public class PlayerInfo : MonoBehaviour
 
     void Awake()
     {
+
         playerTroops = new bool[10];
         NanotrooperUpgrades = new int[4];
         StingerUpgrades = new int[3];
 
+        
 
         essence = PlayerPrefs.GetInt("essence", 0);
         chronocredits = PlayerPrefs.GetInt("cc", 0);
         AnalyzePlayerTroops(PlayerPrefs.GetString("troops", "0000000000"));
         AnalyzePlayerUpgrades(StingerUpgrades, PlayerPrefs.GetString("upgrades_stinger", "000"));
-        AnalyzePlayerUpgrades(NanotrooperUpgrades, PlayerPrefs.GetString("upgrades_nanotrooper", "000"));
+        AnalyzePlayerUpgrades(NanotrooperUpgrades, PlayerPrefs.GetString("upgrades_nanotrooper", "0000"));
         
 
     }

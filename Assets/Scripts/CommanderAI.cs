@@ -76,7 +76,7 @@ public class CommanderAI : MonoBehaviour
         }
         return tMin;
     }
-
+    /*
 
     void Start()
     {
@@ -202,7 +202,7 @@ public class CommanderAI : MonoBehaviour
 
 
     }
-
+    */
 
     void Update()
     {
