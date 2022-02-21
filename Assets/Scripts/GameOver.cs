@@ -25,6 +25,11 @@ public class GameOver : MonoBehaviour
     public float c_endLerpTime;
     public float endLerpVal;
 
+    public float c_UpTimer;
+    public float m_UpTimer;
+    public float upVal;
+    public bool lerpUp;
+
     public Vector2 startPos;
 
     public GameObject UI_Canvas;
@@ -58,9 +63,10 @@ public class GameOver : MonoBehaviour
 
     public void Start()
     {
-        endLerpTime = 5f;
+        endLerpTime = 3f;
         spinTime = 3f;
         lerpTime = 3f;
+        m_UpTimer = 1f;
     }
 
 
@@ -189,8 +195,8 @@ public class GameOver : MonoBehaviour
                 c_spinTime += Time.deltaTime;
             }
             else
-            {             
-                explode_e();            
+            {
+                explode_e();
             }
 
 
@@ -200,11 +206,11 @@ public class GameOver : MonoBehaviour
             {
                 c_lerpTime += Time.deltaTime;
             }
-            
+
 
             m_perc = 1 - Mathf.Pow(1 - m_perc, 5);
 
-            Camera.main.transform.position = Vector3.Lerp(startPos, new Vector2(6,startPos.y), m_perc);
+            Camera.main.transform.position = Vector3.Lerp(startPos, new Vector2(6, startPos.y), m_perc);
 
         }
 
@@ -221,8 +227,8 @@ public class GameOver : MonoBehaviour
                 c_spinTime += Time.deltaTime;
             }
             else
-            {              
-                explode_a();              
+            {
+                explode_a();
             }
 
 
@@ -250,13 +256,14 @@ public class GameOver : MonoBehaviour
             if (victory.enabled)
             {
                 victory.color = new Color(victory.color.r, victory.color.g, victory.color.b, endLerpVal);
-            } else
+            }
+            else
             {
                 defeat.color = new Color(defeat.color.r, defeat.color.g, defeat.color.b, endLerpVal);
             }
 
 
-            
+
 
             if (c_endLerpTime < endLerpTime)
             {
@@ -265,7 +272,31 @@ public class GameOver : MonoBehaviour
             else
             {
                 endLerp = false;
+                lerpUp = true;
             }
+        }
+
+        if (lerpUp)
+        {
+            if (c_UpTimer < m_UpTimer)
+            {
+                c_UpTimer += Time.deltaTime;
+                upVal = c_UpTimer / m_UpTimer;
+                upVal = -(Mathf.Cos(Mathf.PI * upVal) - 1) / 2;
+                if (victory.enabled) {
+                    victory.GetComponent<RectTransform>().anchoredPosition = new Vector2(victory.GetComponent<RectTransform>().anchoredPosition.x, Mathf.Lerp(70f, 200f, upVal));
+                        } else
+                {
+                    defeat.GetComponent<RectTransform>().anchoredPosition = new Vector2(defeat.GetComponent<RectTransform>().anchoredPosition.x, Mathf.Lerp(0, 130f, upVal));
+                }
+            } else
+            {
+                lerpUp = false;
+            }
+           
+          
+        
+
         }
     }
 

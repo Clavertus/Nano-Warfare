@@ -8,11 +8,32 @@ public class MessageManager : MonoBehaviour
 
     public MessageContent messageCanvas;
     public Message[] msg;
-    
 
-    public void OnEnable()
+
+    
+   
+
+    public void Start()
     {
-        messageCanvas.ShowMessage(msg[0]);
+        if (!LevelCheck(0) && PlayerPrefs.GetInt("ot0", 1) == 1)
+        {
+            messageCanvas.ShowMessage(msg[0]);
+            PlayerPrefs.SetInt("ot0", 0);
+        }
     }
-        
+
+
+    bool LevelCheck(int id)
+    {
+        int progress = PlayerPrefs.GetInt("levelProgress", 0);
+
+        if(id < progress)
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
 }

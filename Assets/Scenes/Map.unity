@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.12941177}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -565,13 +565,29 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 67401103}
+  - component: {fileID: 67401102}
   m_Layer: 0
   m_Name: MessageManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &67401102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67401101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5480145f20dcd44a2287bf077b45f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageCanvas: {fileID: 1853140587}
+  msg:
+  - {fileID: 11400000, guid: 0dd2e1615a77cde41b597108f72df83c, type: 2}
 --- !u!4 &67401103
 Transform:
   m_ObjectHideFlags: 0
@@ -2097,9 +2113,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Level_1_1, Assembly-CSharp
-        m_MethodName: unpause
+      - m_Target: {fileID: 1853140587}
+        m_TargetAssemblyTypeName: MessageContent, Assembly-CSharp
+        m_MethodName: lerpBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2122,7 +2138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5235849, g: 0.556321, b: 1, a: 0.2627451}
+  m_Color: {r: 0.5235849, g: 0.556321, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3460,7 +3476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3681,7 +3697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39711642, g: 0.56220496, b: 0.8679245, a: 1}
+  m_Color: {r: 0.39711642, g: 0.56220496, b: 0.8679245, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3856,7 +3872,6 @@ GameObject:
   - component: {fileID: 937480582}
   - component: {fileID: 937480585}
   - component: {fileID: 937480584}
-  - component: {fileID: 937480583}
   m_Layer: 5
   m_Name: MessageBox
   m_TagString: Untagged
@@ -3883,33 +3898,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 300}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &937480583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937480581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8c5205bba6db8c4bafba85ca8e70ce9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainText: {fileID: 864889533}
-  msg: {fileID: 11400000, guid: 0dd2e1615a77cde41b597108f72df83c, type: 2}
-  panel: {fileID: 735344593}
-  button: {fileID: 381764787}
-  button_a: {fileID: 45727451}
-  lerping: 0
-  lerpingback: 0
-  currWidth: 0
-  currHeight: 0
-  desiredWidth: 0
-  desiredHeight: 0
-  c_timer: 0
-  m_timer: 0
 --- !u!114 &937480584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7309,13 +7299,14 @@ GameObject:
   - component: {fileID: 1853140585}
   - component: {fileID: 1853140584}
   - component: {fileID: 1853140583}
+  - component: {fileID: 1853140587}
   m_Layer: 5
   m_Name: MessageCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1853140583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7398,6 +7389,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1853140587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853140582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c5205bba6db8c4bafba85ca8e70ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainText: {fileID: 0}
+  button: {fileID: 0}
+  button_a: {fileID: 0}
+  MB: {fileID: 0}
+  mainTextSimple: {fileID: 864889533}
+  buttonSimple: {fileID: 381764787}
+  buttonSimple_a: {fileID: 45727451}
+  simpleMB: {fileID: 937480581}
+  mainTextReward: {fileID: 0}
+  buttonReward: {fileID: 0}
+  buttonReward_a: {fileID: 0}
+  rewardMB: {fileID: 0}
+  panel: {fileID: 735344593}
+  lerping: 0
+  lerpingback: 0
+  currWidth: 0
+  currHeight: 0
+  desiredWidth: 0
+  desiredHeight: 0
+  c_timer: 0
+  m_timer: 0
 --- !u!1 &1862756771
 GameObject:
   m_ObjectHideFlags: 0
