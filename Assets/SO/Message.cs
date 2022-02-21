@@ -11,4 +11,8 @@ public class Message : ScriptableObject
     public float boxWidth = 350;
     public float boxHeight = 300;
 
+    public string type = "simple";
+
+    // simple, 
+
 }

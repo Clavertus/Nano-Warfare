@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class MessageManager : MonoBehaviour
 {
 
-    public Image messageBox;
+    public MessageContent messageCanvas;
+    public Message[] msg;
+    
 
-    public void createMessage(string content, int type)
+    public void OnEnable()
     {
-     //  MessageContent mb = Instantiate(messageBox).GetComponent<MessageContent>();
-       
+        messageCanvas.ShowMessage(msg[0]);
     }
         
 }
