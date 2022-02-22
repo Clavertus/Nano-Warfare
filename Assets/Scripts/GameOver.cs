@@ -48,6 +48,7 @@ public class GameOver : MonoBehaviour
     public GameObject idle_ps;
     public GameObject e_idle_ps;
 
+    public GameOverMessage gameOverMessage;
 
     public Animator a_anim;
     public Animator e_anim;
@@ -272,6 +273,7 @@ public class GameOver : MonoBehaviour
             else
             {
                 endLerp = false;
+                gameOverMessage.show();
                 lerpUp = true;
             }
         }
