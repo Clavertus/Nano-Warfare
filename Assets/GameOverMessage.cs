@@ -9,6 +9,8 @@ public class GameOverMessage : MonoBehaviour
     public Text[] mb_texts;
     public Image[] mb_imgs;
 
+    public RewardTracker rt;
+
     public GameObject MB;
 
     public float currWidth = 600;
@@ -18,9 +20,39 @@ public class GameOverMessage : MonoBehaviour
     public float c_timer;
     public float m_timer = 0.65f;
 
+    public bool won;
+
     public void show()
     {
         lerping = true;
+        if (won)
+        {
+            mb_texts[0].text = "First clear bonus";
+            mb_texts[1].text = rt.uniqueEssence.ToString();
+
+            mb_texts[2].text = "Clear reward";
+            mb_texts[3].text = rt.clearEssence.ToString();
+
+            mb_texts[4].text = "Destruction bonus";
+            mb_texts[5].text = rt.destructionEssence.ToString();
+
+            mb_texts[6].text = "Total reward";
+            int totalEssence = rt.uniqueEssence + rt.destructionEssence + rt.clearEssence;
+            mb_texts[7].text = totalEssence.ToString();
+
+        } else
+        {
+            mb_texts[0].text = "Damage done";
+            mb_texts[1].text = rt.destructionEssence.ToString();
+
+            mb_texts[2].text = "";
+
+            mb_texts[4].text = "";
+
+            mb_texts[6].text = "Total reward";
+            int totalEssence = rt.destructionEssence;
+            mb_texts[7].text = totalEssence.ToString();
+        }
     }
 
     void Update()
@@ -45,7 +77,7 @@ public class GameOverMessage : MonoBehaviour
                 }
 
                 float perc = c_timer / m_timer;
-                perc = 1 - Mathf.Pow(1 - perc, 4);
+                perc = -(Mathf.Cos(Mathf.PI * perc) - 1) / 2;
                 currWidth = Mathf.Lerp(0, 600, perc);
                 currHeight = Mathf.Lerp(0, 200, perc);
                 MB.GetComponent<RectTransform>().sizeDelta = new Vector2(currWidth, currHeight);

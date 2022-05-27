@@ -5259,7 +5259,7 @@ Transform:
   m_Children:
   - {fileID: 1227308812}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &243584780
 GameObject:
@@ -5367,7 +5367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Clear reward:'
+  m_Text: 
 --- !u!222 &259547778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6119,14 +6119,14 @@ RectTransform:
   m_GameObject: {fileID: 502722288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 808177804}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -50.4}
+  m_AnchoredPosition: {x: 13.33, y: -50.4}
   m_SizeDelta: {x: 307.17, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502722290
@@ -6152,7 +6152,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 27fd2a41147d09547bebb4cc81142b27, type: 3}
     m_FontSize: 56
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 226
@@ -6162,7 +6162,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 197
+  m_Text: 
 --- !u!222 &502722291
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6241,7 +6241,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 67
+  m_Text: 
 --- !u!222 &503444986
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12541,7 +12541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d615987bdfabb4288254e31099217e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ee: 99999
+  ee: 40
   byteDamageExplosion: 0
   kilobyteDamageExplosion: 0
   megabyteDamageExplosion: 0
@@ -12679,7 +12679,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Destruction bonus:'
+  m_Text: 
 --- !u!222 &951442701
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13168,12 +13168,14 @@ MonoBehaviour:
   - {fileID: 1255245336}
   - {fileID: 1929925634}
   - {fileID: 602254760}
+  rt: {fileID: 1342359148}
   MB: {fileID: 808177801}
   currWidth: 0
   currHeight: 0
   lerping: 0
   c_timer: 0
   m_timer: 0.65
+  won: 0
 --- !u!224 &1179107254 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3425437048173131868, guid: 8d952bc095a47324bb152b01982ae5db,
@@ -13442,14 +13444,14 @@ RectTransform:
   m_GameObject: {fileID: 1255245334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35000005, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1901032452}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.5}
+  m_AnchoredPosition: {x: 0, y: 0.57}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255245336
@@ -13472,7 +13474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 44c0b30a6516ad146913c6ed173440a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8c03f03f19346a459bf12befb75bfeb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13572,7 +13574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 30
+  m_Text: 
 --- !u!222 &1294173112
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13672,8 +13674,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rew: {fileID: 11400000, guid: 334b894354c8b2849be8408eaa8168db, type: 2}
   id: 0
-  totalEssence: 0
   uniqueEssence: 0
+  clearEssence: 0
+  destructionEssence: 0
+  totalEssence: 0
 --- !u!114 &1344815922 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3425437048003986648, guid: 8d952bc095a47324bb152b01982ae5db,
@@ -14060,7 +14064,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'First clear bonus:'
+  m_Text: 
 --- !u!222 &1557617591
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19287,7 +19291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 
 --- !u!222 &1642638220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19445,7 +19449,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Total reward:'
+  m_Text: 
 --- !u!222 &1723639526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30047,7 +30051,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2102943918
 GameObject:

@@ -247,12 +247,23 @@ public class NanotrooperAI : MonoBehaviour
             }
             else
             {
-                if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2)
+                if (GetClosestEntity(allEnemies) != null)
                 {
-                    canStepUp = true;
+                    if (GetClosestEntity(allEnemies).transform.position != null)
+                    {
+
+                        if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2)
+                        {
+                            canStepUp = true;
+                        }
+                        else
+                        {
+                            canStepUp = false;
+                        }
+                    }
                 } else
                 {
-                    canStepUp = false;
+                    canStepUp = true;
                 }
             }
         }

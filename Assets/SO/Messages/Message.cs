@@ -13,6 +13,8 @@ public class Message : ScriptableObject
 
     public string type = "simple";
 
+
+
     // simple, 
 
 }

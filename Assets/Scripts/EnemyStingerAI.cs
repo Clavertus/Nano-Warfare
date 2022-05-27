@@ -78,13 +78,14 @@ public class EnemyStingerAI : MonoBehaviour
         levelManager = GameObject.FindGameObjectWithTag("levelManager");
         upgrades = GameManager.GetComponent<PlayerInfo>().StingerUpgrades;
         Target target = gameObject.GetComponent<Target>();
-        slashDamage = upgrades[0] * 5 + 30;
+        slashDamage = 30;
 
 
 
 
 
-        target.maxHP = upgrades[1] * 30 + 100;   //base HP 100, 30 for each level
+        // target.maxHP = upgrades[1] * 30 + 100;   //base HP 100, 30 for each level
+        target.maxHP = 100;
 
         switch (upgrades[2])    //attackSpeed
         {
@@ -144,7 +145,7 @@ public class EnemyStingerAI : MonoBehaviour
     {
 
         allEnemies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
-            new Vector2(transform.position.x - 100, transform.position.y - 1), 1 << 8);
+            new Vector2(transform.position.x - 100, transform.position.y - 1), (1 << 8) | (1 << 12));
 
         allAllies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x + 1f, transform.position.y + 1),
            new Vector2(transform.position.x - 10, transform.position.y - 1), 1 << 7);

@@ -47,13 +47,13 @@ public class EE_blob : MonoBehaviour
         Transform col_transform = gameObject.transform.Find("TapCollider").transform;
         value = Random.Range(1, 100);
 
-        if(value < 20)
+        if(value < 40)
         {
-            ps_transform.localScale = new Vector2(0.2f, 0.2f);
-            EEprovided = 2;
+            ps_transform.localScale = new Vector2(0.4f, 0.4f);
+            EEprovided = 4;
         } else
         {
-            ps_transform.localScale = new Vector2(value / 100f, value / 100f);
+            ps_transform.localScale = new Vector2(Mathf.Clamp(value / 100f, 0.4f, 0.7f), Mathf.Clamp(value / 100f, 0.4f, 0.7f));
             EEprovided = Mathf.RoundToInt(value / 10);
         }
  

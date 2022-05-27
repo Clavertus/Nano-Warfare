@@ -13,6 +13,7 @@ public class Target : MonoBehaviour
     //
 
     public bool isCamo;
+    public bool specialShutdown;
     public GameObject levelObject;
     public GameObject levelManager;
 
@@ -23,6 +24,7 @@ public class Target : MonoBehaviour
         hp = maxHP;
         levelObject = GameObject.Find("LEVEL");
         levelManager = GameObject.Find("LevelManager");
+        
 
       
     }
@@ -33,7 +35,7 @@ public class Target : MonoBehaviour
     public void TakeDamage(float x)
     {
         hp -= x;
-
+        Debug.Log(gameObject.name + " has taken " + x + " damage.");
     }
 
     void Update()
@@ -45,7 +47,9 @@ public class Target : MonoBehaviour
             if (tag == "Enemy")
             {
                 levelObject.GetComponent<LevelStats>().enemiesKilled++;
-                levelManager.GetComponent<GameFlow>().ee += Mathf.RoundToInt(maxHP / 20);
+                int bonusVal = Mathf.RoundToInt(maxHP / 20);
+                levelManager.GetComponent<GameFlow>().ee += bonusVal;
+                levelObject.GetComponent<RewardTracker>().AddDestructionBonus(bonusVal);
                 levelManager.GetComponent<GameFlow>().EEanim.SetTrigger("EEblue");
             }
 
@@ -57,6 +61,7 @@ public class Target : MonoBehaviour
             }
             else
             {
+              //  if(!specialShutdown)
                 Destroy(gameObject);
             }
         }

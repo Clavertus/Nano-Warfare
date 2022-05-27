@@ -505,9 +505,8 @@ MonoBehaviour:
   bulletSpeed: 5
   fireRate: 0
   ps: {fileID: 4704104371060202255}
-  enemiesInRange: []
-  alliesInRange: []
   allEnemies: []
+  allAllies: []
   followThis: {fileID: 0}
   currentTarget: {fileID: 0}
   stoppingDistance: 0
@@ -551,6 +550,9 @@ MonoBehaviour:
   hp: 1
   entityTypeLayer: 
   isCamo: 0
+  specialShutdown: 0
+  levelObject: {fileID: 0}
+  levelManager: {fileID: 0}
 --- !u!114 &6443248695087896467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,7 +667,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 13
   m_Sprite: {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0,
     type: 3}
   m_Color: {r: 0.07329121, g: 0.19817208, b: 0.5754717, a: 1}

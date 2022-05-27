@@ -303,249 +303,26 @@ public class GameFlow : MonoBehaviour
 
     public void SpawnStinger()
     {
-        if (queuePos1)
-        {
-            if (queuePos2)
-            {
-                if (queuePos3)
-                {
-                    if (queuePos4)
-                    {
-                        if (queuePos5)
-                        {
-                         //   Debug.LogWarning("Queue Full!");
-                        }
-                        else
-                        {
-                            queuePos5 = true;
-                            ee -= 10;
-                            EEanim.SetTrigger("EEred");
-                            queue.Add(Stinger);
-
-                        }
-
-                    }
-                    else
-                    {
-                        queuePos4 = true;
-                        ee -= 10;
-                        EEanim.SetTrigger("EEred");
-                        queue.Add(Stinger);
-                    }
-                }
-                else
-                {
-                    queuePos3 = true;
-                    ee -= 10;
-                    EEanim.SetTrigger("EEred");
-                    queue.Add(Stinger);
-                }
-            }
-            else
-            {
-                queuePos2 = true;
-                ee -= 10;
-                EEanim.SetTrigger("EEred");
-                queue.Add(Stinger);
-            }
-        }
-        else
-        {
-            queuePos1 = true;
-            ee -= 10;
-            EEanim.SetTrigger("EEred");
-            queue.Add(Stinger);
-        }
-
-
-    }
-
-    public void SpawnByte()
-    {
-        if (queuePos1)
-        {
-            if (queuePos2)
-            {
-                if (queuePos3)
-                {
-                    if (queuePos4)
-                    {
-                        if (queuePos5)
-                        {
-                            //Debug.Log("Queue Full!");
-                        }
-                        else
-                        {
-                            queuePos5 = true;
-                            ee -= 10;
-                            EEanim.SetTrigger("EEred");
-                            queue.Add(Byte);
-
-                        }
-
-                    }
-                    else
-                    {
-                        queuePos4 = true;
-                        ee -= 10;
-                        EEanim.SetTrigger("EEred");
-                        queue.Add(Byte);
-                    }
-                }
-                else
-                {
-                    queuePos3 = true;
-                    ee -= 10;
-                    EEanim.SetTrigger("EEred");
-                    queue.Add(Byte);
-                }
-            }
-            else
-            {
-                queuePos2 = true;
-                ee -= 10;
-                EEanim.SetTrigger("EEred");
-                queue.Add(Byte);
-            }
-        }
-        else
-        {
-            queuePos1 = true;
-            ee -= 10;
-            EEanim.SetTrigger("EEred");
-            queue.Add(Byte);
-        }
+        SpawnEntity(Stinger, 10);
     }
 
     public void SpawnNanotrooper()
     {
-        if (queuePos1)
-        {
-            if (queuePos2)
-            {
-                if (queuePos3)
-                {
-                    if (queuePos4)
-                    {
-                        if (queuePos5)
-                        {
-                          //  Debug.LogWarning("Queue Full!");
-                        }
-                        else
-                        {
-                            queuePos5 = true;
-                            ee -= 20;
-                            EEanim.SetTrigger("EEred");
-                            queue.Add(Nanotrooper);
+        SpawnEntity(Nanotrooper, 20);
+    }
 
-                        }
-
-                    }
-                    else
-                    {
-                        queuePos4 = true;
-                        ee -= 20;
-                        EEanim.SetTrigger("EEred");
-                        queue.Add(Nanotrooper);
-                    }
-                }
-                else
-                {
-                    queuePos3 = true;
-                    ee -= 20;
-                    EEanim.SetTrigger("EEred");
-                    queue.Add(Nanotrooper);
-                }
-            }
-            else
-            {
-                queuePos2 = true;
-                ee -= 20;
-                EEanim.SetTrigger("EEred");
-                queue.Add(Nanotrooper);
-            }
-        }
-        else
-        {
-            queuePos1 = true;
-            ee -= 20;
-            EEanim.SetTrigger("EEred");
-            queue.Add(Nanotrooper);
-        }
-
-
-
-
+    public void SpawnByte()
+    {
+        SpawnEntity(Byte, 10);
     }
 
     public void SpawnCommander()
     {
-
-        if (queuePos1)
-        {
-            if (queuePos2)
-            {
-                if (queuePos3)
-                {
-                    if (queuePos4)
-                    {
-                        if (queuePos5)
-                        {
-                         //   Debug.Log("Queue Full!");
-                        }
-                        else
-                        {
-                            queuePos5 = true;
-                            ee -= 35;
-                            EEanim.SetTrigger("EEred");
-                            queue.Add(Commander);
-
-                        }
-
-                    }
-                    else
-                    {
-                        queuePos4 = true;
-                        ee -= 35;
-                        EEanim.SetTrigger("EEred");
-                        queue.Add(Commander);
-                    }
-                }
-                else
-                {
-                    queuePos3 = true;
-                    ee -= 35;
-                    EEanim.SetTrigger("EEred");
-                    queue.Add(Commander);
-                }
-            }
-            else
-            {
-                queuePos2 = true;
-                ee -= 35;
-                EEanim.SetTrigger("EEred");
-                queue.Add(Commander);
-            }
-        }
-        else
-        {
-            queuePos1 = true;
-            ee -= 35;
-            EEanim.SetTrigger("EEred");
-            queue.Add(Commander);
-        }
-
-
-       
-        
-
-     
-        
+        SpawnEntity(Commander, 35);
     }
 
-    public void SpawnBulky()
+    public void SpawnEntity(GameObject entity, int cost)
     {
-
         if (queuePos1)
         {
             if (queuePos2)
@@ -556,14 +333,14 @@ public class GameFlow : MonoBehaviour
                     {
                         if (queuePos5)
                         {
-                         //   Debug.Log("Queue Full!");
+                            message("Queue full!", 'e');
                         }
                         else
                         {
                             queuePos5 = true;
-                            ee -= 30;
+                            ee -= cost;
                             EEanim.SetTrigger("EEred");
-                            queue.Add(Bulky);
+                            queue.Add(entity);
 
                         }
 
@@ -571,42 +348,38 @@ public class GameFlow : MonoBehaviour
                     else
                     {
                         queuePos4 = true;
-                        ee -= 30;
+                        ee -= cost;
                         EEanim.SetTrigger("EEred");
-                        queue.Add(Bulky);
+                        queue.Add(entity);
                     }
                 }
                 else
                 {
                     queuePos3 = true;
-                    ee -= 30;
+                    ee -= cost;
                     EEanim.SetTrigger("EEred");
-                    queue.Add(Bulky);
+                    queue.Add(entity);
                 }
             }
             else
             {
                 queuePos2 = true;
-                ee -= 30;
+                ee -= cost;
                 EEanim.SetTrigger("EEred");
-                queue.Add(Bulky);
+                queue.Add(entity);
             }
         }
         else
         {
             queuePos1 = true;
-            ee -= 30;
+            ee -= cost;
             EEanim.SetTrigger("EEred");
-            queue.Add(Bulky);
+            queue.Add(entity);
         }
 
 
-
-
-
-
-
     }
+
 
     public void message(string x, char type) // 32 characters is max
     {

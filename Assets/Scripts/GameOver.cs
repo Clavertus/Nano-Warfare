@@ -154,11 +154,13 @@ public class GameOver : MonoBehaviour
 
         if (result == 0) //lose
         {
-            haloOn();        
+            haloOn();
+            gameOverMessage.won = false;
         }
         if(result == 1) //win
         {
             e_haloOn();
+            gameOverMessage.won = true;
         }
     }
 
@@ -256,7 +258,7 @@ public class GameOver : MonoBehaviour
 
             if (victory.enabled)
             {
-                victory.color = new Color(victory.color.r, victory.color.g, victory.color.b, endLerpVal);
+                victory.color = new Color(victory.color.r, victory.color.g, victory.color.b, endLerpVal);             
             }
             else
             {
@@ -312,6 +314,7 @@ public class GameOver : MonoBehaviour
         ex_light.SetActive(true);
         idle_ps.SetActive(false);
         endPanelOn(0); //lose
+        gameOverMessage.won = false;
     }
 
     public void explode_e()
@@ -324,6 +327,7 @@ public class GameOver : MonoBehaviour
         e_idle_ps.SetActive(false);
         ex_light_e.SetActive(true);
         endPanelOn(1); //win
+        gameOverMessage.won = true;
     }
 
     public void endPanelOn(int condition)

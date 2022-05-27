@@ -10,7 +10,7 @@ public class rifleBullet : MonoBehaviour
     void Start()
     {
         GameObject GameManager = GameObject.FindGameObjectWithTag("gameManager");
-        impactForce = GameManager.GetComponent<PlayerInfo>().NanotrooperUpgrades[0] * 7 + 20;
+        impactForce = 30;
     }
 
     void OnCollisionEnter2D(Collision2D col)

@@ -39,7 +39,7 @@ public class BarAlignment : MonoBehaviour
     void UpdateUnits()
     {
         arrE = Physics2D.OverlapAreaAll(new Vector2(-12, -6), new Vector2(12, 2), 1 << 7); //enemies
-        arrA = Physics2D.OverlapAreaAll(new Vector2(-12, -6), new Vector2(12, 2), 1 << 8); //allies     
+        arrA = Physics2D.OverlapAreaAll(new Vector2(-12, -6), new Vector2(12, 2), (1 << 8) | (1 << 12)); //allies     
         
 
         foreach(Collider2D c in arrA)

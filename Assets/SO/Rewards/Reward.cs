@@ -8,7 +8,7 @@ public class Reward : ScriptableObject
 
     public int unique_essence;
     public int unique_cc;
-    public int bonus_essence;
+    public int clear_essence;
 
     public int id;
 

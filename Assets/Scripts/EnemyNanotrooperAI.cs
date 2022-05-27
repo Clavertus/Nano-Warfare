@@ -134,8 +134,9 @@ public class EnemyNanotrooperAI : MonoBehaviour
         }
 
 
-        target.maxHP = upgrades[2] * 30 + 200;   //base HP 200, 30 for each level
+        //   target.maxHP = upgrades[2] * 30 + 200;   //base HP 200, 30 for each level
 
+        target.maxHP = 200;
         switch (upgrades[3])    //fireRate
         {
             case 1:
@@ -191,11 +192,12 @@ public class EnemyNanotrooperAI : MonoBehaviour
 
     void Update()
     {
+       
 
         currentTarget = GetClosestEntity(allEnemies);
 
         allEnemies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x, transform.position.y + 1),
-            new Vector2(transform.position.x - range, transform.position.y - 1), 1 << 8);
+            new Vector2(transform.position.x - range, transform.position.y - 1), (1 << 8) | (1 << 12));
 
         allAllies = Physics2D.OverlapAreaAll(new Vector2(transform.position.x + .3f, transform.position.y + 1),
            new Vector2(transform.position.x - 10f, transform.position.y - 1), 1 << 7);
@@ -248,14 +250,26 @@ public class EnemyNanotrooperAI : MonoBehaviour
             }
             else
             {
-                if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2)
+
+                if (GetClosestEntity(allEnemies) != null)
+                {
+                    if (GetClosestEntity(allEnemies).transform.position != null)
+                    {
+
+                        if (Vector2.Distance(transform.position, GetClosestEntity(allEnemies).transform.position) > stoppingDistance * 2)
+                        {
+                            canStepUp = true;
+                        }
+                        else
+                        {
+                            canStepUp = false;
+                        }
+                    }
+                } else
                 {
                     canStepUp = true;
                 }
-                else
-                {
-                    canStepUp = false;
-                }
+               
             }
         }
         else if (allEnemies.Length == 0)

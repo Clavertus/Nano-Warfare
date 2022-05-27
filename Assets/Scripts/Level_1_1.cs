@@ -62,7 +62,8 @@ public class Level_1_1 : MonoBehaviour
             msg1.SetActive(false);
             EEgen.StartCoroutine(EEgen.Generate());
             if(spawner.gameObject.activeSelf)
-            spawner.StartCoroutine(spawner.AnalyzeSeed("s8ss93sn88ss88snn|999sn88ss88n"));
+                //  spawner.StartCoroutine(spawner.AnalyzeSeed("s8ss93sn88ss88snn|999sn88ss88n"));
+                spawner.StartCoroutine(spawner.AnalyzeSeed("|n9"));
         }
     }
 

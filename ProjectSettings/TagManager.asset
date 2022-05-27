@@ -11,6 +11,7 @@ TagManager:
   - levelManager
   - Ally
   - EnemyBullet
+  - AllyByte
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - AllyBullet
   - EnemyBullet
   - Blob
-  - 
+  - AllyByte
   - 
   - 
   - 

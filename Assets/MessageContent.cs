@@ -9,6 +9,7 @@ public class MessageContent : MonoBehaviour
     public Text mainText;
     public Image button;
     public Image button_a;
+    public Image[] buttons;
     public GameObject MB;
 
     #endregion
@@ -33,7 +34,21 @@ public class MessageContent : MonoBehaviour
     #endregion
 
 
+    #region shop
+
+    public Text mainTextShop;
+    public Image buttonShop;
+    public Image buttonShop_a;
+    public GameObject shopMB;
+    public Image purchase_e;
+    public Image purchase_r;
+    public Image exit_purchase;
+    public Image exit_x;
+
+    #endregion
+
     public Image panel;
+
    
 
     public bool lerping;
@@ -51,12 +66,14 @@ public class MessageContent : MonoBehaviour
     
     public void ShowMessage(Message msg)
     {
+        gameObject.GetComponent<GraphicRaycaster>().enabled = true;
         switch (msg.type)
         {
             case "simple":
+                buttons = new Image[2];
                 mainText = mainTextSimple;
-                button = buttonSimple;
-                button_a = buttonSimple_a;
+                buttons[0] = buttonSimple;
+                buttons[1] = buttonSimple_a;
                 MB = simpleMB;
                 break;
 
@@ -64,6 +81,17 @@ public class MessageContent : MonoBehaviour
                 mainText = mainTextReward;
                 button = buttonReward;
                 button_a = buttonReward_a;
+                MB = rewardMB;
+                break;
+
+            case "shop":
+                buttons = new Image[4];
+                mainText = mainTextSimple;
+                MB = simpleMB;
+                buttons[0] = purchase_e;
+                buttons[1] = purchase_r;
+                buttons[2] = exit_purchase;
+                buttons[3] = exit_x;
                 break;
 
 
@@ -73,7 +101,7 @@ public class MessageContent : MonoBehaviour
         mainText.text = msg.content;
 
         c_timer = 0;
-        m_timer = .65f;
+        m_timer = .35f;
         lerping = true;
     }
 
@@ -105,8 +133,12 @@ public class MessageContent : MonoBehaviour
 
                 panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, Mathf.Clamp(perc, 0, 0.75f));
 
-                button.color = new Color(button.color.r, button.color.g, button.color.b, Mathf.Clamp(perc_t, 0, 0.25f));
-                button_a.color = new Color(button_a.color.r, button_a.color.g, button_a.color.b, Mathf.Clamp(perc_t, 0, 0.25f));
+
+                foreach(Image b in buttons)
+                {
+                    b.color = new Color(b.color.r, b.color.g, b.color.b, Mathf.Clamp(perc_t, 0, 0.25f));
+                }
+           
             } else
             {
                 lerping = false;
@@ -139,13 +171,18 @@ public class MessageContent : MonoBehaviour
 
                 panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, Mathf.Clamp(alpha, 0, 0.75f));
 
-                button.color = new Color(button.color.r, button.color.g, button.color.b, Mathf.Clamp(alpha, 0, 0.25f));
-                button_a.color = new Color(button_a.color.r, button_a.color.g, button_a.color.b, Mathf.Clamp(alpha, 0, 0.25f));
+
+                foreach (Image b in buttons)
+                {
+                    b.color = new Color(b.color.r, b.color.g, b.color.b, Mathf.Clamp(alpha, 0, 0.25f));
+                }
+              
             }
             else
             {
                 lerpingback = false;
                 c_timer = 0;
+                gameObject.GetComponent<GraphicRaycaster>().enabled = false;
             }
         }
 

@@ -7,15 +7,19 @@ public class RewardTracker : MonoBehaviour
     public Reward rew;
     public int id; //level id
 
-    public int totalEssence;
     public int uniqueEssence;
+    public int clearEssence;
+    public int destructionEssence;
+    public int totalEssence;
+   
 
     void Start()
     {
         if (!LevelCheck(rew))
         {
             uniqueEssence = rew.unique_essence;
-            totalEssence += uniqueEssence;
+            clearEssence = rew.clear_essence;
+            
         } else
         {
 
@@ -35,5 +39,10 @@ public class RewardTracker : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void AddDestructionBonus(int bonus)
+    {
+        destructionEssence += bonus;
     }
 }
