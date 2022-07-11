@@ -10,9 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7390b5565b057a74986ec4290a057630, type: 3}
-  m_Name: Purchase1
+  m_Name: Owned
   m_EditorClassIdentifier: 
-  content: 'Do you want to purchase:'
+  content: 'Already owned!
+
+    Hooray!'
+  purchasedItem: 
+  icon: {fileID: 0}
+  purchase_e_price: 0
+  purchase_r_price: 0
   boxWidth: 350
   boxHeight: 300
-  type: shop
+  type: simple

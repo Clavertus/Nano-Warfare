@@ -10,12 +10,12 @@ public class EnemyRifleBullet : MonoBehaviour
     void Start()
     {
         GameObject GameManager = GameObject.FindGameObjectWithTag("gameManager");
-        impactForce = GameManager.GetComponent<PlayerInfo>().NanotrooperUpgrades[0] * 7 + 20;
+        impactForce = 20;
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.tag == "Ally")
+        if (col.collider.tag == "Ally" || col.collider.tag == "AllyByte")
         {
             if (col.collider.transform.parent.GetComponent<Target>() != null)
             {
