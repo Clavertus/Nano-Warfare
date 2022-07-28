@@ -7,27 +7,36 @@ public class GameFlow : MonoBehaviour
 {
     public int ee; //ethereal energy
 
-    public float byteDamageExplosion;
-    public float kilobyteDamageExplosion;
-    public float megabyteDamageExplosion;
-
+    [Header("Priorities")]
     public int currentPriorityNumber = 0;
+    public int currentPriorityNumber_A = 0;
+
+    [Header("Health")]
 
     public float crystalMaxHealth;
     public float crystalHealth;
 
+    [Header("Particle references")]
+
     public ParticleSystem crystalParticles;
     public ParticleSystem spawnps;
+    public ParticleSystem aerialSpawnPS;
+
+    [Header("Unit references")]
 
     public GameObject Byte;
     public GameObject Nanotrooper;
     public GameObject Commander;
     public GameObject Stinger;
     public GameObject Bulky;
+    public GameObject A_SDrone;
 
     public Image textbox;
-    public Image queueBar;
 
+
+    [Header("Queue GUI")]
+
+    public Image queueBar;
     public bool queuePos1;
     public bool queuePos2;
     public bool queuePos3;
@@ -43,8 +52,12 @@ public class GameFlow : MonoBehaviour
     public Image queueConn4;
     public Image queueBlob4;
 
+    [Header("Timers")]
+
     public float currCooldown;
     public float maxCooldown;
+
+    [Header("Animations")]
 
     public Animator EEanim;
     public Animator textanim;
@@ -58,22 +71,28 @@ public class GameFlow : MonoBehaviour
     public Text loadedTextTop;
     public Text loadedTextBot;
 
+    [Header("Buttons")]
     public Button b_Stinger;
     public Button b_Nanotrooper;
     public Button b_Byte;
     public Button b_Commander;
     public Button b_Bulky;
+    public Button b_SDrone;
 
+    [Header("Unit Costs")]
     public int stingerCost;
     public int nanotrooperCost;
     public int byteCost;
     public int commanderCost;
     public int bulkyCost;
+    public int sdroneCost;
 
     public float unitMovementSpeed;
 
     public Text fpsText;
     public float deltaTime;
+
+    public Transform aerialSpawn;
 
 
 
@@ -190,16 +209,30 @@ public class GameFlow : MonoBehaviour
                 queueReady = true;
                 if (queue[0].name != "Byte")
                 {
-                    Instantiate(queue[0], transform.position, transform.rotation).GetComponent<Priority>().priority = currentPriorityNumber;
-                    currentPriorityNumber++;
+                    if (queue[0].name.Substring(0, 2) == "A_") //if unit is aerial
+                    {
+                    Instantiate(queue[0], aerialSpawn.position, transform.rotation).GetComponent<AerialPriority>().aerialPriority = currentPriorityNumber_A;
+                    currentPriorityNumber_A++;
+                    aerialSpawnPS.Play();
+                    }
+                     else
+                     {
+
+                     Instantiate(queue[0], transform.position, transform.rotation).GetComponent<Priority>().priority = currentPriorityNumber;
+                     currentPriorityNumber++;
+                     spawnps.Play();
+                }
+
+
                 } else
                 {
                     Instantiate(queue[0], transform.position, transform.rotation);
+                    spawnps.Play();
                 }
 
                 message(queue[0].name + " initialized!", 'a');
                 queue.RemoveAt(0);
-                spawnps.Play();
+                
                 queuePos1 = false;
             }
 
@@ -319,6 +352,11 @@ public class GameFlow : MonoBehaviour
     public void SpawnCommander()
     {
         SpawnEntity(Commander, 35);
+    }
+
+    public void SpawnSDrone()
+    {
+        SpawnEntity(A_SDrone, 10);
     }
 
     public void SpawnEntity(GameObject entity, int cost)

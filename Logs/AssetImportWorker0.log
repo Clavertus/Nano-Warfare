@@ -15,11 +15,11 @@ A:/Nano Warfare/Nano Warfare
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62667
+59958
 Successfully changed project path to: A:/Nano Warfare/Nano Warfare
 A:/Nano Warfare/Nano Warfare
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 48.00 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 60.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path A:/UNITY 2/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -36,525 +36,125 @@ Initialize mono
 Mono path[0] = 'A:/UNITY 2/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'A:/UNITY 2/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'A:/UNITY 2/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56836
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: A:/UNITY 2/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: A:/UNITY 2/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001023 seconds.
+Registered in 0.001064 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 48.57 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 54.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.471 seconds
+- Completed reload, in  1.733 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001067 seconds.
+Registered in 0.001216 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 51.86 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 51.75 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.873 seconds
+- Completed reload, in  1.076 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2612 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2613 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 142.1 MB.
 System memory in use after: 142.3 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3087.
-Total: 1.948100 ms (FindLiveObjects: 0.255900 ms CreateObjectMapping: 0.122000 ms MarkObjects: 1.544300 ms  DeleteObjects: 0.024600 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3088.
+Total: 2.542100 ms (FindLiveObjects: 0.323600 ms CreateObjectMapping: 0.173800 ms MarkObjects: 1.983900 ms  DeleteObjects: 0.059200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Testing Field.unity
-  artifactKey: Guid(4b7601c89dc0a3749969cbc82c5a29c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Testing Field.unity using Guid(4b7601c89dc0a3749969cbc82c5a29c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc67f4a372f41e323695b316021c7bf3') in 0.085421 seconds
-  Import took 0.156115 seconds .
+  path: Assets/Scripts/AI/SDroneAI.cs
+  artifactKey: Guid(2382ac3e35287ba4a9499bbece15df8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AI/SDroneAI.cs using Guid(2382ac3e35287ba4a9499bbece15df8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c949c2809a9a230e7715e563bd56bc') in 0.066297 seconds
+  Import took 0.071656 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001363 seconds.
+Registered in 0.001267 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.829 seconds
+- Completed reload, in  0.925 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2478 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.9 MB.
+Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.0 MB.
 System memory in use after: 135.2 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3089.
-Total: 2.452400 ms (FindLiveObjects: 0.265000 ms CreateObjectMapping: 0.153500 ms MarkObjects: 2.009200 ms  DeleteObjects: 0.023400 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3090.
+Total: 2.846400 ms (FindLiveObjects: 0.647000 ms CreateObjectMapping: 0.239600 ms MarkObjects: 1.933400 ms  DeleteObjects: 0.023200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 134.187544 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98069c1d5a7f093133cb2ccbf458855') in 0.291878 seconds
-  Import took 0.315812 seconds .
+  Time since last request: 125.909331 seconds.
+  path: Assets/Scripts/AI/SDroneAI.cs
+  artifactKey: Guid(2382ac3e35287ba4a9499bbece15df8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AI/SDroneAI.cs using Guid(2382ac3e35287ba4a9499bbece15df8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66d0d688572ae9bfd686808ab996cbc') in 0.004642 seconds
+  Import took 0.008630 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.172957 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171638f97c9bfab03cff74d4446889fc') in 0.013775 seconds
-  Import took 0.055221 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.233657 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3509ed5d3b3a30f4d0b3ddcfb373304') in 0.013920 seconds
-  Import took 0.046287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.725643 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef11b65a78d5d23d35887a62fd2b0a5') in 0.014516 seconds
-  Import took 0.039726 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.662234 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197fbc2c4581265cdcce54eb224cc158') in 0.010762 seconds
-  Import took 0.033610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.244885 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5abfa0723642f6d33d4f52fe9787aab') in 0.012625 seconds
-  Import took 0.039238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.408193 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aad716076757aa0462e420fc3c3d016') in 0.013954 seconds
-  Import took 0.041044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.546779 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd2c1482687208724c243553bcc6178') in 0.011841 seconds
-  Import took 0.058354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.443875 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab7869c03e4151252e5017d26dfc84e') in 0.043981 seconds
-  Import took 0.062717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.310333 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4875cc2659caaa826a7cad894fc5b350') in 0.009283 seconds
-  Import took 0.028773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.367711 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcb29cc069ec8e41414f89801b3a30d') in 0.010595 seconds
-  Import took 0.015172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.909241 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c693477698436efc1da6a3a5bcb3565') in 0.019134 seconds
-  Import took 0.036028 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.856474 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a7198fdada7c8474f1905b1aa7ba2f') in 0.009765 seconds
-  Import took 0.027212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.129328 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da02fda7d612c4d7abe07c929cb8b304') in 0.010404 seconds
-  Import took 0.049617 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.589972 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d1ca6828222c2e62a9bc4902d42f60c') in 0.010331 seconds
-  Import took 0.033088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.549101 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a889d3996b90e0db4a5ab14ce6638a') in 0.012188 seconds
-  Import took 0.042002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.810476 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d55eb3f370b3b3704ca328828c2346d') in 0.012003 seconds
-  Import took 0.016879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.492907 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf
-  artifactKey: Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c25c0ee6c77a62b679de533506fe8f') in 0.140314 seconds
-  Import took 0.160033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.463406 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf
-  artifactKey: Guid(1062c701058745940ae5dca6219c64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a1968362b749470951dd2a85d75e6b') in 0.044178 seconds
-  Import took 0.062814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
-  artifactKey: Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8b2d248db2c357a197f37e87d93aac') in 0.045214 seconds
-  Import took 0.069465 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/Perfect DOS VGA 437.ttf
-  artifactKey: Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/Perfect DOS VGA 437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5984967eb4df3d07d5ffd632932bae6') in 0.068263 seconds
-  Import took 0.092151 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf
-  artifactKey: Guid(2a29e27936eb547458f646f71125b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58c382d943b8fd9f880f4bfac41ae46') in 0.052442 seconds
-  Import took 0.075566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.151590 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3229c5d3d95d38aa40c7f5efd32e61') in 0.010122 seconds
-  Import took 0.029561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.401075 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1060715d86f386a3e35ffff290159f02') in 0.012256 seconds
-  Import took 0.046521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.054344 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cfe517207e355f1b8a78c7835b1a36') in 0.009465 seconds
-  Import took 0.057627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.968564 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c4b4f9da8cfd2a9c6d14a04272de0b') in 0.012998 seconds
-  Import took 0.017703 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.193905 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d96f04ede2a8a752ef017710067d00') in 0.009954 seconds
-  Import took 0.027502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.664367 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f78c544e63f139442e98e880df33e9f') in 0.014284 seconds
-  Import took 0.018644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.615760 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3fe97b71bd386c4b14ae83954d4d62') in 0.010737 seconds
-  Import took 0.022424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.820405 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e231f02443f198d6c09f8f7c78ea74') in 0.011527 seconds
-  Import took 0.066184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.769497 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96bb338b9ca6c3105f93f16fed2dc4cd') in 0.011134 seconds
-  Import took 0.015859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.415878 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e5ede2af09534a8e1c8059c655bf6ae') in 0.011377 seconds
-  Import took 0.041014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.376685 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a477efeed15384c1fdb867c9ac29fc8') in 0.009714 seconds
-  Import took 0.028868 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.657019 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cca68553c67aed3c31cedf60ce2719b') in 0.010185 seconds
-  Import took 0.014332 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.200562 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec7053446ee485d94fa832d5376d547') in 0.012390 seconds
-  Import took 0.016982 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.253844 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d747af79433d4cb661fe91d0ee03773') in 0.012637 seconds
-  Import took 0.036591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.352132 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612d25736cbec26e1adf8b89f483e631') in 0.012205 seconds
-  Import took 0.017905 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.012596 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc8f5cf8d7d101301ef8c4fd3175dd7') in 0.009796 seconds
-  Import took 0.037114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.433648 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493a9255dd4474a47e1432fb0cc6bb5b') in 0.022949 seconds
-  Import took 0.049589 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.775589 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b6f8243ee99dbe087ac027b016865d') in 0.011408 seconds
-  Import took 0.030058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.810734 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eecdcd0a6bf20b818bf1098139c36c0c') in 0.009761 seconds
-  Import took 0.049524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.197922 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e90ce8e99aa0e8e4bc185ad243db29b') in 0.009285 seconds
-  Import took 0.014211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.823262 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b75594f5c742088232488091953bd1d') in 0.009301 seconds
-  Import took 0.025368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.880101 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff6940266cbf149a7eab8ac054209d9d') in 0.013918 seconds
-  Import took 0.036395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.614357 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6563da9ea0c214a6ef51579ace4c16a') in 0.013066 seconds
-  Import took 0.017574 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.591369 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a937863730ad1ca2626d9f967e5ba1') in 0.008844 seconds
-  Import took 0.039940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.781026 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a5644698d523494017f4258c8a9334') in 0.009531 seconds
-  Import took 0.061665 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.569331 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8be865946c9e326c2c285d5d5f3ff64') in 0.011553 seconds
-  Import took 0.028240 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.882494 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e478bb732feed0576914bc437914066') in 0.012615 seconds
-  Import took 0.018152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.771551 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49f253f436f94a3b2782bf4752ad0e7') in 0.009000 seconds
-  Import took 0.021170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.613760 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79323b17f45992fc7d65fa08911a787') in 0.010634 seconds
-  Import took 0.035461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.455260 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9207f276c796870021d15633d94d7516') in 0.009736 seconds
-  Import took 0.062158 seconds .
+  Time since last request: 0.035416 seconds.
+  path: Assets/Scripts/AI/SDroneAI.cs
+  artifactKey: Guid(2382ac3e35287ba4a9499bbece15df8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AI/SDroneAI.cs using Guid(2382ac3e35287ba4a9499bbece15df8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66d0d688572ae9bfd686808ab996cbc') in 0.002275 seconds
+  Import took 0.006368 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001362 seconds.
+Registered in 0.001132 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.841 seconds
+- Completed reload, in  0.906 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.6 MB.
-System memory in use after: 141.8 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.0 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3173.
-Total: 3.065000 ms (FindLiveObjects: 0.260100 ms CreateObjectMapping: 0.123500 ms MarkObjects: 2.632700 ms  DeleteObjects: 0.047600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3092.
+Total: 2.429000 ms (FindLiveObjects: 0.317500 ms CreateObjectMapping: 0.154700 ms MarkObjects: 1.935900 ms  DeleteObjects: 0.019300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001062 seconds.
+Registered in 0.008637 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -564,47 +164,47 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.830 seconds
+- Completed reload, in  0.902 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.6 MB.
-System memory in use after: 141.8 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3175.
-Total: 2.602100 ms (FindLiveObjects: 0.273500 ms CreateObjectMapping: 0.151400 ms MarkObjects: 2.153100 ms  DeleteObjects: 0.022800 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3094.
+Total: 2.725300 ms (FindLiveObjects: 0.331800 ms CreateObjectMapping: 0.160700 ms MarkObjects: 2.208500 ms  DeleteObjects: 0.022300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001105 seconds.
+Registered in 0.001107 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
+- Completed reload, in  0.879 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.6 MB.
-System memory in use after: 141.9 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3177.
-Total: 2.192600 ms (FindLiveObjects: 0.257400 ms CreateObjectMapping: 0.124500 ms MarkObjects: 1.791500 ms  DeleteObjects: 0.017800 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3096.
+Total: 2.608900 ms (FindLiveObjects: 0.276600 ms CreateObjectMapping: 0.149100 ms MarkObjects: 2.148500 ms  DeleteObjects: 0.033400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001077 seconds.
+Registered in 0.001081 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -614,22 +214,47 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.954 seconds
+- Completed reload, in  0.876 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.7 MB.
-System memory in use after: 142.9 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3179.
-Total: 2.201200 ms (FindLiveObjects: 0.312800 ms CreateObjectMapping: 0.128100 ms MarkObjects: 1.739500 ms  DeleteObjects: 0.016900 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3098.
+Total: 2.120400 ms (FindLiveObjects: 0.237200 ms CreateObjectMapping: 0.113000 ms MarkObjects: 1.751100 ms  DeleteObjects: 0.018000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001117 seconds.
+Registered in 0.001605 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3100.
+Total: 1.993600 ms (FindLiveObjects: 0.246300 ms CreateObjectMapping: 0.125400 ms MarkObjects: 1.605500 ms  DeleteObjects: 0.015500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001079 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -639,192 +264,22 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.118 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.7 MB.
-System memory in use after: 141.9 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3181.
-Total: 3.728800 ms (FindLiveObjects: 0.253900 ms CreateObjectMapping: 0.551600 ms MarkObjects: 2.901000 ms  DeleteObjects: 0.020800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001230 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.854 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.7 MB.
-System memory in use after: 141.9 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3183.
-Total: 5.724700 ms (FindLiveObjects: 0.419300 ms CreateObjectMapping: 0.272400 ms MarkObjects: 5.012200 ms  DeleteObjects: 0.019500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 250.552023 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ae7cced53b19f7651d249281bf3d69') in 0.149772 seconds
-  Import took 0.175597 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.195170 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663770701671853af815422bf7212ec3') in 0.011258 seconds
-  Import took 0.035152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.602437 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b583dc20e5a24fc2a1fdfa1e5105e073') in 0.012239 seconds
-  Import took 0.016672 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001062 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
 - Completed reload, in  0.873 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.8 MB.
-System memory in use after: 142.0 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3221.
-Total: 3.561500 ms (FindLiveObjects: 0.351300 ms CreateObjectMapping: 0.263200 ms MarkObjects: 2.900100 ms  DeleteObjects: 0.045600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.008096 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106c3450c842dc34600d59b350b8948f') in 0.259784 seconds
-  Import took 0.265291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.504317 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db16fb9f4fe54914e742b4f9137ea53') in 0.012670 seconds
-  Import took 0.018634 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.999782 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db166d0a4c5af2f94c11a2546a3d798d') in 0.012919 seconds
-  Import took 0.051641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.121138 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc0255a2c8cc2bc77880f1953efb567') in 0.011915 seconds
-  Import took 0.016758 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.785160 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7096837bab31dd51ebc44c357d22f89c') in 0.013219 seconds
-  Import took 0.042483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.180810 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2b8db0b756ff357b9308ef84461bb5') in 0.012383 seconds
-  Import took 0.030225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.975724 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c2c276bd71a3b0ab9e0da402c70741') in 0.013402 seconds
-  Import took 0.032988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.158446 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584abd1b30378d9883289133cd22b72b') in 0.015090 seconds
-  Import took 0.024851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.799095 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2a876abc43146ee0e29f005a9d1c66') in 0.016542 seconds
-  Import took 0.027224 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008245 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2a876abc43146ee0e29f005a9d1c66') in 0.014304 seconds
-  Import took 0.019316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.162857 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff27a833f0f0173503fbce5f5ac66d9') in 0.012907 seconds
-  Import took 0.043890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.975888 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b852e69baf1888ac104e77d290785cba') in 0.013983 seconds
-  Import took 0.031605 seconds .
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3102.
+Total: 2.108900 ms (FindLiveObjects: 0.248800 ms CreateObjectMapping: 0.123400 ms MarkObjects: 1.719100 ms  DeleteObjects: 0.016500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001092 seconds.
+Registered in 0.001084 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -834,421 +289,17 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.918 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.9 MB.
-System memory in use after: 142.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3259.
-Total: 2.823100 ms (FindLiveObjects: 0.290200 ms CreateObjectMapping: 0.142900 ms MarkObjects: 2.345600 ms  DeleteObjects: 0.042900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.297534 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f632890421f1d34a592654dae470f974') in 0.236714 seconds
-  Import took 0.270894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.457309 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2900e748033dd08df27bf56e6a0aae7d') in 0.018103 seconds
-  Import took 0.030916 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.971251 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441169728408806a2eb9a32cc57eb726') in 0.016358 seconds
-  Import took 0.029477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.399708 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bb5d3d39cb36100394abd65e8e60f5') in 0.016733 seconds
-  Import took 0.035550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.962355 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01af40b6b0d04702138c1eaa55b529f1') in 0.013938 seconds
-  Import took 0.035351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004405 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01af40b6b0d04702138c1eaa55b529f1') in 0.014175 seconds
-  Import took 0.018830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.196393 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f97724eacf8147bd7940145c20085ac') in 0.015258 seconds
-  Import took 0.029781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.169482 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26c63b55ad9baa9278f3d5371cc70f9') in 0.020937 seconds
-  Import took 0.049130 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.172112 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c945305b0eff173492d0c6283e5213e2') in 0.015528 seconds
-  Import took 0.020450 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.185000 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebae81c7398ed20ebb5affa5670a24f') in 0.024250 seconds
-  Import took 0.036225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.992549 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25767db6624f58069449694a73b07562') in 0.023699 seconds
-  Import took 0.037899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.162011 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fcfc3fcfd48abd5c1c2b9f79369955') in 0.016851 seconds
-  Import took 0.021757 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.005145 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1642b4a4ad5f962b3c827641596860ce') in 0.020530 seconds
-  Import took 0.035580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.173352 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f896deccae9e9f2d41677d7970679a') in 0.016434 seconds
-  Import took 0.029487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.783222 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e65078dcf8470f8e82f4b69959c9ce') in 0.016406 seconds
-  Import took 0.026004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006212 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e65078dcf8470f8e82f4b69959c9ce') in 0.017074 seconds
-  Import took 0.022255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.389458 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ca35324c606dc00eacf22dac2f904e') in 0.021659 seconds
-  Import took 0.028307 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001198 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.893 seconds
+- Completed reload, in  0.897 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.1 MB.
-System memory in use after: 142.3 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3297.
-Total: 2.336400 ms (FindLiveObjects: 0.278700 ms CreateObjectMapping: 0.130000 ms MarkObjects: 1.877400 ms  DeleteObjects: 0.049100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 170.885561 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310745dcb534cbd149d5815678e7c142') in 0.155784 seconds
-  Import took 0.191997 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001325 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.907 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.2 MB.
-System memory in use after: 142.4 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3335.
-Total: 2.301400 ms (FindLiveObjects: 0.275500 ms CreateObjectMapping: 0.128800 ms MarkObjects: 1.855600 ms  DeleteObjects: 0.040300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.197664 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1b917b23033e88f7d357aac9c2cbe7') in 0.219602 seconds
-  Import took 0.234020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.078001 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7d9a5db01d9077d2f9cba939e01f4a') in 0.016899 seconds
-  Import took 0.047398 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.083798 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69cc060491cfd96af721b1211c0caeb1') in 0.017463 seconds
-  Import took 0.022744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.790831 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71031b39fe0b3b6875230c5f7b6156c2') in 0.016211 seconds
-  Import took 0.021370 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.628663 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e9db65364261d4fe18576ebe1c4e0d') in 0.016093 seconds
-  Import took 0.021405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.041170 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7da09f312057c74c00e82cd1ee8a36') in 0.019084 seconds
-  Import took 0.025721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.824499 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1574840ff2704b70675060b52fe83b8f') in 0.020211 seconds
-  Import took 0.094052 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.805001 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1369dcd670505a6ec7a7fa7d538b194') in 0.016974 seconds
-  Import took 0.047033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.823623 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae60f5ed2b3d0148aaffc94349469a6') in 0.020343 seconds
-  Import took 0.036728 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.005164 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2becd9dc2715747b28a157f8465ca2a') in 0.015956 seconds
-  Import took 0.028459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.599729 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd79d3ac776710d131f6538ffaa21d19') in 0.016486 seconds
-  Import took 0.028024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.882563 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db322e42b4bc8e8650222a0c3f2d0836') in 0.016709 seconds
-  Import took 0.033699 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.641205 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faff6089ddd652fb129aaa853e55171b') in 0.016722 seconds
-  Import took 0.051644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.606888 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7624ba04851babc776c9a02311e56d35') in 0.019302 seconds
-  Import took 0.043862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.005071 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45427be4fea8032c5adf4e9f464a7e43') in 0.020109 seconds
-  Import took 0.051971 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.834262 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1beef8b55ad058092d829227ef48bd73') in 0.018565 seconds
-  Import took 0.030718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.633218 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c19c641eaa843c3c44cde3778713d29') in 0.017666 seconds
-  Import took 0.023296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.680439 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807369b6569826b256017b106da8fcea') in 0.025482 seconds
-  Import took 0.031980 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001144 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.885 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.4 MB.
-System memory in use after: 142.6 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3373.
-Total: 2.842100 ms (FindLiveObjects: 0.314700 ms CreateObjectMapping: 0.129600 ms MarkObjects: 2.353900 ms  DeleteObjects: 0.042700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.573073 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273dc9007893edc2ac6127bf08a94466') in 0.240856 seconds
-  Import took 0.264721 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001177 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.060 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.5 MB.
-System memory in use after: 142.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3411.
-Total: 3.120900 ms (FindLiveObjects: 0.397000 ms CreateObjectMapping: 0.192400 ms MarkObjects: 2.506100 ms  DeleteObjects: 0.023900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.213460 seconds.
-  path: Assets/Bullets/s_dronepulse.prefab
-  artifactKey: Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bullets/s_dronepulse.prefab using Guid(05a3bfac947c0e8439b3bbc128e58251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022d03c8ff457e14bfd6d5f12d3a7290') in 0.245068 seconds
-  Import took 0.253133 seconds .
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3104.
+Total: 2.179800 ms (FindLiveObjects: 0.294000 ms CreateObjectMapping: 0.168400 ms MarkObjects: 1.699200 ms  DeleteObjects: 0.016900 ms)
 
 ========================================================================
 Received Prepare
@@ -1263,216 +314,48 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.898 seconds
+- Completed reload, in  0.857 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3449.
-Total: 2.747000 ms (FindLiveObjects: 0.296400 ms CreateObjectMapping: 0.134400 ms MarkObjects: 2.295500 ms  DeleteObjects: 0.019600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3106.
+Total: 3.072600 ms (FindLiveObjects: 0.361400 ms CreateObjectMapping: 0.183400 ms MarkObjects: 2.499500 ms  DeleteObjects: 0.026300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001141 seconds.
+Registered in 0.001180 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.057 seconds
+- Completed reload, in  0.897 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3451.
-Total: 2.549000 ms (FindLiveObjects: 0.312800 ms CreateObjectMapping: 0.171200 ms MarkObjects: 2.044800 ms  DeleteObjects: 0.018900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001060 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.881 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3453.
-Total: 2.363900 ms (FindLiveObjects: 0.303200 ms CreateObjectMapping: 0.131800 ms MarkObjects: 1.909400 ms  DeleteObjects: 0.018600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001130 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.864 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3455.
-Total: 3.044700 ms (FindLiveObjects: 0.652900 ms CreateObjectMapping: 0.262900 ms MarkObjects: 2.108900 ms  DeleteObjects: 0.018800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001106 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.907 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
+Unloading 2480 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.1 MB.
+System memory in use after: 136.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3457.
-Total: 5.077700 ms (FindLiveObjects: 1.205000 ms CreateObjectMapping: 0.428100 ms MarkObjects: 3.425900 ms  DeleteObjects: 0.017400 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3108.
+Total: 3.361100 ms (FindLiveObjects: 0.748100 ms CreateObjectMapping: 0.246500 ms MarkObjects: 2.345000 ms  DeleteObjects: 0.019900 ms)
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001079 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.966 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
+Received Import Request.
+  Time since last request: 4924.107328 seconds.
+  path: Assets/Troops/Aerial/A_SDrone.prefab
+  artifactKey: Guid(b1bc8c2891edef246ac95f4e7bdf96cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Troops/Aerial/A_SDrone.prefab using Guid(b1bc8c2891edef246ac95f4e7bdf96cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3fe72143c39b6fc61fab81662117fe') in 0.266513 seconds
+  Import took 0.272662 seconds .
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3459.
-Total: 2.542700 ms (FindLiveObjects: 0.350900 ms CreateObjectMapping: 0.159800 ms MarkObjects: 2.011500 ms  DeleteObjects: 0.019100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001081 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.056 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3461.
-Total: 3.547600 ms (FindLiveObjects: 0.453700 ms CreateObjectMapping: 0.244000 ms MarkObjects: 2.825900 ms  DeleteObjects: 0.022000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001466 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.906 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3463.
-Total: 2.438800 ms (FindLiveObjects: 0.313600 ms CreateObjectMapping: 0.144300 ms MarkObjects: 1.958700 ms  DeleteObjects: 0.021100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001717 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.905 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2479 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3465.
-Total: 2.342100 ms (FindLiveObjects: 0.297300 ms CreateObjectMapping: 0.134800 ms MarkObjects: 1.890200 ms  DeleteObjects: 0.018900 ms)
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
