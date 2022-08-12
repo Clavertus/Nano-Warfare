@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SDroneAI : MonoBehaviour
+public class WaspAI : MonoBehaviour
 {
     public Animator anim;
     public bool walk;
@@ -14,6 +14,8 @@ public class SDroneAI : MonoBehaviour
     public bool isWaiting = true;
     public bool canStepUp;
     public float stoppingDistance;
+
+    public float roundSpeed = 5f;
 
 
     public Rigidbody2D rb;
@@ -49,6 +51,8 @@ public class SDroneAI : MonoBehaviour
     public bool cond3;
     public bool canAttack = true;
 
+    bool alternate;
+
     public Collider2D mem_1;
     public Collider2D mem_2;
 
@@ -57,8 +61,12 @@ public class SDroneAI : MonoBehaviour
     public Collider2D closestAlly;
     public float distanceToClosestAlly;
 
-    public GameObject pulse;
-    public Transform pulseOrigin;
+    public GameObject round;
+    public Transform roundOrigin;
+    public Transform roundOrigin2;
+
+    public GameObject gun;
+    public GameObject gun2;
 
     public int filterCalls = 0;
 
@@ -104,7 +112,7 @@ public class SDroneAI : MonoBehaviour
 
         thisCollider = gameObject.transform.GetChild(0).GetComponent<PolygonCollider2D>();
 
-      
+
 
 
 
@@ -115,7 +123,7 @@ public class SDroneAI : MonoBehaviour
     void FilterOutOfEntityArray(ref Collider2D[] arr, int index)
     {
 
-        for(int i = index; i < arr.Length - 1; i++)
+        for (int i = index; i < arr.Length - 1; i++)
         {
             arr[i] = arr[i + 1];
         }
@@ -137,9 +145,9 @@ public class SDroneAI : MonoBehaviour
         Vector2 br_a = new Vector2(transform.position.x + 100, transform.position.y - 10);
 
         Vector2 tl_t = new Vector2(transform.position.x - .5f, transform.position.y + 1);
-        Vector2 tr_t = new Vector2(transform.position.x + 1, transform.position.y + 1);
+        Vector2 tr_t = new Vector2(transform.position.x + 10, transform.position.y + 1);
         Vector2 bl_t = new Vector2(transform.position.x - .5f, transform.position.y - 10);
-        Vector2 br_t = new Vector2(transform.position.x + 1, transform.position.y - 10);
+        Vector2 br_t = new Vector2(transform.position.x + 10, transform.position.y - 10);
 
         Vector2 tl_f = new Vector2(transform.position.x - 1f, transform.position.y + 1);
         Vector2 tr_f = new Vector2(transform.position.x + 10, transform.position.y + 1);
@@ -179,13 +187,13 @@ public class SDroneAI : MonoBehaviour
             new Vector2(transform.position.x + 10, transform.position.y - 1), 1 << 8);
 
         //filter out PlayerCrystal from allAllies
-        
-        for (int i = 0; i < allAllies.Length; i++) 
+
+        for (int i = 0; i < allAllies.Length; i++)
         {
-            if(allAllies[i] == thisCollider)
+            if (allAllies[i] == thisCollider)
             {
                 FilterOutOfEntityArray(ref allAllies, i);
-            }             
+            }
         }
 
         for (int i = 0; i < allAllies.Length; i++)
@@ -215,7 +223,7 @@ public class SDroneAI : MonoBehaviour
             Debug.Log("Distance to: " + GetClosestEntity(allAllies).gameObject.name + " is: " + distanceToClosestAlly);
         }
 
-        
+
 
         if (checkForAlly())
         {
@@ -232,7 +240,7 @@ public class SDroneAI : MonoBehaviour
         }
 
         if (!attacking)
-        { 
+        {
             StartCoroutine("Attack");
             attacking = true;
         }
@@ -248,21 +256,54 @@ public class SDroneAI : MonoBehaviour
             && transform.position.x < GetClosestEntity(allAllies).transform.position.x)
         {
             return true;
-        } else
+        }
+        else
         {
             return false;
         }
-        
+
     }
 
 
     public IEnumerator Attack()
     {
-         Instantiate(pulse, pulseOrigin.position, transform.rotation);        
-         yield return new WaitForSeconds(1f);
 
-         if(attacking)
-         StartCoroutine("Attack");
+        Rigidbody2D rb_b;
+
+        if (!alternate)
+        {
+            rb_b = Instantiate(round, roundOrigin.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+            alternate = !alternate;
+        }
+        else
+        {
+            rb_b = Instantiate(round, roundOrigin2.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+            alternate = !alternate;
+        }
+
+        Vector2 targetPos = GetClosestEntity(targetEnemies).transform.position;
+
+        float x = targetPos.x - transform.position.x;
+        float y = targetPos.y - transform.position.y;
+
+        
+
+        float angleRad = Mathf.Atan2(y,x);
+        float angleDeg = Mathf.Rad2Deg * Mathf.Atan2(y,x);
+
+        gun.transform.eulerAngles = new Vector3(0, 0, angleDeg);
+        gun2.transform.eulerAngles = new Vector3(0, 0, angleDeg);
+
+        rb_b.gameObject.transform.eulerAngles = new Vector3(0, 0, angleDeg);
+
+
+        rb_b.AddForce(new Vector2(Mathf.Cos(angleRad) * roundSpeed, Mathf.Sin(angleRad) * roundSpeed), ForceMode2D.Impulse);
+       
+        
+        yield return new WaitForSeconds(0.16f);
+
+        if (attacking)
+            StartCoroutine("Attack");
 
 
     }
