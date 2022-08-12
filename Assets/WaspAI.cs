@@ -300,7 +300,8 @@ public class WaspAI : MonoBehaviour
         rb_b.AddForce(new Vector2(Mathf.Cos(angleRad) * roundSpeed, Mathf.Sin(angleRad) * roundSpeed), ForceMode2D.Impulse);
        
         
-        yield return new WaitForSeconds(0.16f);
+        //yield return new WaitForSeconds(0.16f);
+        yield return new WaitForSeconds(2f);
 
         if (attacking)
             StartCoroutine("Attack");

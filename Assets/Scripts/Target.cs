@@ -16,6 +16,7 @@ public class Target : MonoBehaviour
     public bool specialShutdown;
     public GameObject levelObject;
     public GameObject levelManager;
+    public GameObject damageShower;
 
 
 
@@ -24,6 +25,7 @@ public class Target : MonoBehaviour
         hp = maxHP;
         levelObject = GameObject.Find("LEVEL");
         levelManager = GameObject.Find("LevelManager");
+        damageShower = GameObject.Find("DamageShower");
         
 
       
@@ -35,6 +37,7 @@ public class Target : MonoBehaviour
     public void TakeDamage(float x)
     {
         hp -= x;
+        damageShower.GetComponent<DamageCanvas>().TextSpawn(x, gameObject);
         Debug.Log(gameObject.name + " has taken " + x + " damage.");
     }
 
